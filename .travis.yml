@@ -1,6 +1,7 @@
 dist: bionic
 language: python
-before_script: pip install isotree
+python: "3.8"
+before_script: pip install numpy pandas cython scipy isotree
 script: python test/support/predict.py
 notifications:
   email:
